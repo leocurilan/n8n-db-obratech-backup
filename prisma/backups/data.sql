@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict SngMv5nLrIEP3UtM2TYkYOCbZH9ebl2VBCSjutNhldcfDTt8T61EdNGF6XPhoLJ
+-- \restrict 0scm5R084YoDPN8F9H77byBsqaC3n21n0BsfvxpZrzCHiqPpmSXNcTCYhAvYaw3
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -197,7 +197,7 @@ workflow:editor	Workflow Editor	Workflow Editor	workflow	t	2025-10-27 15:48:38.0
 --
 
 COPY "public"."user" ("id", "email", "firstName", "lastName", "password", "personalizationAnswers", "createdAt", "updatedAt", "settings", "disabled", "mfaEnabled", "mfaSecret", "mfaRecoveryCodes", "lastActiveAt", "roleSlug") FROM stdin;
-a4464c3b-aa69-494c-a427-ba2a10752b42	leo.curilan@gmail.com	leo	Curilan	$2a$10$MAroFWwWZNC4G32tTUwdpO2qMtXtyDz.ssFdI47h2pH5qVNFRlrDG	{"version":"v4","personalization_survey_submitted_at":"2025-10-27T15:52:28.618Z","personalization_survey_n8n_version":"1.117.2","companySize":"<20","companyType":"digital-agency","role":"customer-support","reportedSource":"youtube"}	2025-10-27 15:44:57.051+00	2025-10-27 15:52:29.892+00	{"userActivated": false}	f	f	\N	\N	2025-10-27	global:owner
+a4464c3b-aa69-494c-a427-ba2a10752b42	leo.curilan@gmail.com	leo	Curilan	$2a$10$MAroFWwWZNC4G32tTUwdpO2qMtXtyDz.ssFdI47h2pH5qVNFRlrDG	{"version":"v4","personalization_survey_submitted_at":"2025-10-27T15:52:28.618Z","personalization_survey_n8n_version":"1.117.2","companySize":"<20","companyType":"digital-agency","role":"customer-support","reportedSource":"youtube"}	2025-10-27 15:44:57.051+00	2025-10-28 15:47:01.336+00	{"userActivated": false}	f	f	\N	\N	2025-10-28	global:owner
 \.
 
 
@@ -1117,8 +1117,6 @@ COPY "public"."workflow_dependency" ("id", "workflowId", "workflowVersionId", "d
 --
 
 COPY "public"."workflow_history" ("versionId", "workflowId", "authors", "createdAt", "updatedAt", "nodes", "connections") FROM stdin;
-24f61ee0-c438-4a29-96e0-d9352be47d14	l4u2tnzDdp69CqIj	leo Curilan	2025-10-27 16:16:27.743+00	2025-10-27 16:16:27.743+00	[{"parameters":{"rule":{"interval":[{}]}},"type":"n8n-nodes-base.scheduleTrigger","typeVersion":1.2,"position":[0,0],"id":"8749e0cb-6f6b-4e4c-905a-4e55cfab358e","name":"Schedule Trigger"}]	{}
-946f0527-04d8-4f20-b2b2-c996cb06bee4	iRfnmGMPh7JT1wQV	leo Curilan	2025-10-27 16:16:30.617+00	2025-10-27 16:16:30.617+00	[{"parameters":{"rule":{"interval":[{}]}},"type":"n8n-nodes-base.scheduleTrigger","typeVersion":1.2,"position":[0,0],"id":"8749e0cb-6f6b-4e4c-905a-4e55cfab358e","name":"Schedule Trigger"}]	{}
 \.
 
 
@@ -1262,6 +1260,6 @@ SELECT pg_catalog.setval('"public"."workflow_dependency_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict SngMv5nLrIEP3UtM2TYkYOCbZH9ebl2VBCSjutNhldcfDTt8T61EdNGF6XPhoLJ
+-- \unrestrict 0scm5R084YoDPN8F9H77byBsqaC3n21n0BsfvxpZrzCHiqPpmSXNcTCYhAvYaw3
 
 RESET ALL;
